@@ -1,6 +1,6 @@
 # Vektralog Privacy Policy
 
-**Effective date: 2026-10-07**
+**Effective date: 2026-10-08**
 
 Vektralog is a ride logger for motorcycles, cars and bicycles, made by
 Ivnoworks. It is built local-first. There is no Vektralog
@@ -9,7 +9,8 @@ because there is nowhere to send it.
 
 ## In short
 
-- Your rides, garage and settings are stored on your phone.
+- Your rides, garage, settings and the photos you add to a ride are stored
+  on your phone.
 - Vektralog has no analytics, no advertising and no tracking code of its own.
 - Location is recorded only while a ride is recording, never outside one.
 - Heart rate from your watch, where offered and only if you turn it on, is
@@ -81,6 +82,8 @@ because there is nowhere to send it.
   looked up, the hourly weather Open-Meteo answered for its two rounded
   places, kept with the ride. The temperature shown while you ride is kept
   only in memory and never stored. See Weather below.
+- **Ride photos:** a reduced copy of each photo you add to a ride from
+  your gallery. See Ride photos below.
 - **Garage:** the vehicles you add, their photos, fuel and service entries,
   notes, and the documents you keep in each vehicle's glovebox.
 - **Crash detection:** if you set up Crash SOS, the impacts the detector
@@ -263,10 +266,17 @@ else.
 
 ## Ride photos
 
-If you grant the photos permission, Vektralog looks through your camera
-photos **on your phone** to show the ones taken during a ride, matched by
-time. Nothing is copied, changed, uploaded or shared. Removing the
-permission removes the feature; your photos are never touched either way.
+You can add photos to a ride. Add photos opens **Android's own photo
+picker**, and only the photos you choose there reach Vektralog: it has no
+permission to read your photos and **never sees your gallery**. Of each
+photo you choose it keeps a **reduced copy** (at most 1600 pixels on the
+long side) inside its private storage on this phone, filed with that
+ride; the original in your gallery is not changed, moved or uploaded.
+Removing the photo, or the ride, removes the copy. Ride photos are
+**left out of Android's cloud backup, the backup folder and the Google
+Drive backup**, and the data export does not carry them; on Android 12
+and later they move with a direct phone-to-phone transfer, like the
+documents.
 
 ## Vehicle photos and documents
 
@@ -287,7 +297,7 @@ they are deleted with the vehicle and when you uninstall the app.
 - **Android backup:** your phone's own backup may include Vektralog's
   rides, garage and settings like any other app's, under your Google
   account's backup settings. Left out on purpose: your SOS contact, stored
-  documents, the sign-in details below, when Health Connect first let
+  documents, ride photos, the sign-in details below, when Health Connect first let
   Vektralog read, the weather switch (only a "weather off" goes along), and the backup
   feature's own settings. Android stops
   backing up an app once its data passes 25 MB, roughly 40 hours of rides;
@@ -329,7 +339,6 @@ Signing out forgets them and turns the Drive backup off.
   show over the lock screen.
 - **Start at boot:** only to tell you a restart interrupted a ride. It never
   starts a recording.
-- **Photos (optional):** see Ride photos.
 - **Heart rate (optional, where offered):** read from Health Connect; see
   Heart rate from your watch.
 - **Battery-optimisation exemption (optional):** so Android does not stop a
@@ -337,8 +346,9 @@ Signing out forgets them and turns the Drive backup off.
 - **Internet:** for map tiles, the backups you turn on and the weather,
   unless you turn it off.
 
-Vektralog has no permission to read your contacts, send SMS itself or make
-calls.
+Vektralog has no permission to read your photos or your contacts, to send
+SMS itself or to make calls. Photos reach it only through Android's picker,
+one choice at a time.
 
 ## How your data is protected
 
@@ -351,8 +361,9 @@ Files you export are ordinary files, readable wherever you put them.
 ## Keeping and deleting
 
 Your data stays until you delete it. Deleting a ride, a vehicle or a
-document removes it from the phone, and deleting a ride also removes it
-from the backup folder and the Drive backup. Uninstalling removes
+document removes it from the phone, a ride's photos go with the ride, and
+deleting a ride also removes it from the backup folder and the Drive
+backup. Uninstalling removes
 everything on the phone. Ivnoworks holds no copy, so there is nothing to
 ask us to delete. Copies you made yourself, exports and backups in your own
 storage, are yours to remove.

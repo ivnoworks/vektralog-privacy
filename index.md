@@ -177,10 +177,14 @@ accelerometer, and the countdown starts when you press the SOS button. Your
 contact's name and number stay on this phone and are left out of every
 backup.
 
-## Voice (optional)
+## Voice (on unless you turn it off)
 
-Off until you turn it on in Settings > Voice. While a ride records,
-Vektralog can say short lines through a headset or a car's Bluetooth when
+On unless you turn it off: Vektralog ships with it on, and Settings >
+Voice turns it off. Before 8 October 2026 it was off until you turned it
+on; an install that never opened Settings > Voice comes up on with that
+day's version, and one that did keeps the choice it holds. It speaks only
+while a ride records, and never otherwise. While a ride records,
+Vektralog says short lines through a headset or a car's Bluetooth when
 one is connected, and otherwise through the phone's own speaker (or not
 at all, if you choose "Only through a headset or the car"): the
 ride starting and saved, its distance, time and top speed, the GPS
@@ -333,12 +337,16 @@ Signing out forgets them and turns the Drive backup off.
 - **Bluetooth (optional, auto-record only):** to notice when a device you
   picked connects. No scanning.
 - **Notifications:** the recording notification with Pause and Stop, the
-  auto-record countdown, the Crash SOS countdown, and one-time notices (a
-  ride interrupted by a restart, an earlier ride saved).
+  auto-record countdown, the Crash SOS countdown, a warning that a rigid
+  mount is shaking the phone, and one-time notices (a ride interrupted by a
+  restart, an earlier ride saved).
 - **Full-screen alerts (optional, Crash SOS only):** so the SOS countdown can
   show over the lock screen.
-- **Start at boot:** only to tell you a restart interrupted a ride. It never
-  starts a recording.
+- **Start at boot:** to tell you a restart interrupted a ride, and, when
+  auto-record is on and the device you chose is already connected when the
+  phone unlocks, to start auto-record's cancellable countdown as if the
+  device had just connected. It never resumes an interrupted ride, and it
+  never starts a recording any other way.
 - **Heart rate (optional, where offered):** read from Health Connect; see
   Heart rate from your watch.
 - **Battery-optimisation exemption (optional):** so Android does not stop a

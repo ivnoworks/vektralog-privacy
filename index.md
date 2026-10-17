@@ -1,6 +1,6 @@
 # Vektralog Privacy Policy
 
-**Effective date: 2026-10-08**
+**Effective date: 2026-10-18**
 
 Vektralog is a ride logger for motorcycles, cars and bicycles, made by
 Ivnoworks. It is built local-first. There is no Vektralog
@@ -9,8 +9,8 @@ because there is nowhere to send it.
 
 ## In short
 
-- Your rides, garage, settings and the photos you add to a ride are stored
-  on your phone.
+- Your rides, plans, garage, settings and the photos you add to a ride are
+  stored on your phone.
 - Vektralog has no analytics, no advertising and no tracking code of its own.
 - Location is recorded only while a ride is recording, never outside one.
 - Heart rate from your watch, where offered and only if you turn it on, is
@@ -23,7 +23,8 @@ because there is nowhere to send it.
   you are in and the hour, at the start and every half hour, go to
   Open-Meteo. Never the track.
 - Everything else that leaves your phone is something you chose to send:
-  an export, a shared image, an SOS text, a backup you turned on.
+  an export, a shared image, an SOS text (in a version with Crash SOS), a
+  point handed to Waze or Google Maps, a backup you turned on.
 
 ## What Vektralog stores on your phone
 
@@ -86,9 +87,15 @@ because there is nowhere to send it.
   your gallery. See Ride photos below.
 - **Garage:** the vehicles you add, their photos, fuel and service entries,
   notes, and the documents you keep in each vehicle's glovebox.
-- **Crash detection:** if you set up Crash SOS, the impacts the detector
+- **Plans:** the routes you import from a GPX or KML file, or draw by
+  tapping points on the map: the file's points and the names in it, and
+  which plan you armed for the next ride. See Plans below.
+- **Crash detection:** if you set up Crash SOS (in a version that has it;
+  see Crash SOS below), the impacts the detector
   considered and rejected in the last 30 days (when, how hard, and why it
   said no), so you can see what it is doing. No position is kept with them.
+  The current version adds nothing to it; a ledger left by an earlier
+  version stays on this phone until a version with Crash SOS prunes it.
 - **Settings,** and in the garage the Bluetooth address of the device you
   picked for each vehicle's auto-record, and your SOS contact's name and
   number. For auto-record
@@ -138,15 +145,17 @@ where you send it, and Vektralog keeps no record of where that was:
   starts auto-record and leaves the device's address on the phone (your
   backups keep it, so a restore can find the device again);
 - sharing a ride card image, which has no map and no date unless you add one;
-- the SOS text: Vektralog opens your SMS app with the message and your last
-  position already written, and **you press send**. Nothing is sent
-  automatically;
+- the SOS text (in a version with Crash SOS): Vektralog opens your SMS app
+  with the message and your last position already written, and **you press
+  send**. Nothing is sent automatically;
 - opening where one of your cars or motorcycles was parked (the last point
   that vehicle's own last ride logged before it was paused or stopped,
   already on your phone) in a maps app. Until you tap it, the spot stays on
   the phone: Home draws the road into it from the ride's own track, with no
   map tile and no place-name lookup;
-- opening a stored document in a viewer app.
+- opening a stored document in a viewer app;
+- handing one point of a plan, the next waypoint or the destination, to
+  Waze or Google Maps on your phone. See Plans below.
 
 **Backups you turn on,** described under Backups below.
 
@@ -166,6 +175,12 @@ Ivnoworks receives none of it.
   in Android's settings, ends it.
 
 ## Crash SOS
+
+Switched off in the current version, which sends nothing: it watches for
+no crash, shows no countdown, asks for no full-screen permission and opens
+no SMS app, and a contact saved in an earlier version stays on this phone,
+unused. The rest of this section is the feature as it works in a version
+that has it.
 
 Optional, and off until you set it up. While a ride records, Vektralog
 watches the accelerometer for an impact. If it judges one to be a crash, it
@@ -188,7 +203,8 @@ Vektralog says short lines through a headset or a car's Bluetooth when
 one is connected, and otherwise through the phone's own speaker (or not
 at all, if you choose "Only through a headset or the car"): the
 ride starting and saved, its distance, time and top speed, the GPS
-dropping and coming back, the phone getting too hot, the crash SOS. The
+dropping and coming back, the phone getting too hot, the crash SOS (in a
+version that has it). The
 words are spoken by Android's speech engine, a separate app on your phone
 under its own privacy policy, with a voice installed on the phone that
 works offline: Vektralog never chooses a voice that needs a connection, so
@@ -296,10 +312,26 @@ move with a direct phone-to-phone transfer. They are **left out of
 Android's cloud backup, the backup folder and the Google Drive backup**, and
 they are deleted with the vehicle and when you uninstall the app.
 
+## Plans
+
+A plan is a route you import from a GPX or KML file (from Kurviger,
+calimoto, Google My Maps, a friend) or draw by tapping points on the map.
+Vektralog keeps the file's points and the names in it on this phone, and
+nothing else: importing reads only the file you pick, once, and nothing
+about a plan leaves the phone by itself. No route is computed by anyone:
+the line you see is the file's own, or straight lines between the points
+you tapped. While a ride records, where you are on the plan is worked out
+on the phone from the ride's own positions and is not stored. **Navigate**
+hands one point, the next waypoint or the destination, to Waze or Google
+Maps on your phone, only when you tap it; that app's own privacy policy
+applies from there, and Vektralog receives nothing back. Plans are in
+your backups (the backup folder and the Google Drive backup) and in the
+data export (there as GPX files).
+
 ## Backups
 
 - **Android backup:** your phone's own backup may include Vektralog's
-  rides, garage and settings like any other app's, under your Google
+  rides, plans, garage and settings like any other app's, under your Google
   account's backup settings. Left out on purpose: your SOS contact, stored
   documents, ride photos, the sign-in details below, when Health Connect first let
   Vektralog read, the weather switch (only a "weather off" goes along), and the backup
@@ -308,11 +340,11 @@ they are deleted with the vehicle and when you uninstall the app.
   the Backup screen tells you when that happens.
 - **Backup folder (optional):** a folder you pick (on the phone, a memory
   card, or a cloud-storage app you already use) gets a copy of your rides,
-  garage and settings after every ride. Vektralog writes only into that
+  plans, garage and settings after every ride. Vektralog writes only into that
   folder and reads nothing else in it. Not included: photos, documents, your
   SOS contact.
-- **Google Drive (optional, where offered):** a copy of your rides, garage,
-  fuel and service entries and settings in a hidden app folder in **your**
+- **Google Drive (optional, where offered):** a copy of your rides, plans,
+  garage, fuel and service entries and settings in a hidden app folder in **your**
   Google Drive, which only Vektralog can read. It asks Google for access to
   that folder and nothing else. Not included: photos, documents, your SOS
   contact. Settings > Your data > Backup > Disconnect turns it off and lets
@@ -337,11 +369,13 @@ Signing out forgets them and turns the Drive backup off.
 - **Bluetooth (optional, auto-record only):** to notice when a device you
   picked connects. No scanning.
 - **Notifications:** the recording notification with Pause and Stop, the
-  auto-record countdown, the Crash SOS countdown, a warning that a rigid
+  auto-record countdown, the Crash SOS countdown (in a version with Crash
+  SOS), a warning that a rigid
   mount is shaking the phone, and one-time notices (a ride interrupted by a
   restart, an earlier ride saved).
-- **Full-screen alerts (optional, Crash SOS only):** so the SOS countdown can
-  show over the lock screen.
+- **Full-screen alerts (optional, Crash SOS only):** requested only by a
+  version with Crash SOS, so the SOS countdown can show over the lock
+  screen. The current version does not request it.
 - **Start at boot:** to tell you a restart interrupted a ride, and, when
   auto-record is on and the device you chose is already connected when the
   phone unlocks, to start auto-record's cancellable countdown as if the
@@ -368,8 +402,8 @@ Files you export are ordinary files, readable wherever you put them.
 
 ## Keeping and deleting
 
-Your data stays until you delete it. Deleting a ride, a vehicle or a
-document removes it from the phone, a ride's photos go with the ride, and
+Your data stays until you delete it. Deleting a ride, a vehicle, a plan or
+a document removes it from the phone, a ride's photos go with the ride, and
 deleting a ride also removes it from the backup folder and the Drive
 backup. Uninstalling removes
 everything on the phone. Ivnoworks holds no copy, so there is nothing to

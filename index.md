@@ -1,6 +1,6 @@
 # Vektralog Privacy Policy
 
-**Effective date: 2026-10-18**
+**Effective date: 2026-10-26**
 
 Vektralog is a ride logger for motorcycles, cars and bicycles, made by
 Ivnoworks. It is built local-first. There is no Vektralog
@@ -421,4 +421,4 @@ address with a new effective date.
 
 ## Contact
 
-Ivnoworks · contact@ivnoworks.com
+Ivnoworks · vektralog@ivnoworks.com
